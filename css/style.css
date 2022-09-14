@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary:#7562e0;
+    --color-success:#00bf8e;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition:all 400ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 300; */
+    /* color: var(--color-dark); */
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: var(--color-bg);
+}
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin:0 auto;
+}
+section{
+    padding: 6rem 0;
+    margin: 5rem 0;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5{
+    line-height: 2rem;
+    /* color: var(--color-black); */
+}
+h1{
+    font-size: 1.9rem;
+    /* line-height: 1.1; */
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 1rem;
+}
+a{
+    color: var(--color-white);
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.btn{
+    background: var(--color-black);
+    color:var(--color-black);
+    display:inline-block;
+    font-width: 500;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+.btn-primary{
+    background-color: var(--color-danger);
+    color: var(--color-white);
+}
+
+/* .btn-primary:hover{
+    border-color:var(--color-primary);
+    background: var(--color-light);
+    color: var(--color-primary);
+} */
+
+
+/* .btn-lg{
+    padding: 1.1rem 2rem;
+    font-size: 1.2rem;
+} */
+
+/* ================NAVBAR================== */
+
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/* ---------change nav styles using javaScript----------  */
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+.nav_menu a:hover{
+    color: var(--color-bg2);
+}
+.nav_menu .btn-primary:hover{
+    color: var(--color-white);
+}
+
+
+/* ============================HEADER====================== */
+
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 9rem;
+}
+
+.header_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header_left p{
+    margin: 1rem 0 2.4rem;
+}
+
+/* ===============================Skills==================== */
+.skills{
+    background: var(--color-bg1);
+    height: 29rem;
+}
+.skills h1{
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.skills_container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem 1.5rem;
+   /* overflow: hidden; */
+}
+.skills_container h4{
+    text-align: center;
+    /* margin: 0.5rem; */
+}
+
+.skills_container article{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 10rem;
+    transition: var(--transition);
+}
+.skills_container img{
+    height: 5rem;
+    width: 5rem;
+    margin-left: 29%;
+}
+.skills_container article:hover{
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.5);
+   padding: 10%;
+   cursor: pointer;
+}
+
+
+
+
+

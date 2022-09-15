@@ -46,7 +46,7 @@ body{
 }
 section{
     padding: 6rem 0;
-    margin: 5rem 0;
+    margin:5rem 0;
 }
 section h2{
     text-align: center;
@@ -125,11 +125,14 @@ nav{
 }
 
 /* ---------change nav styles using javaScript----------  */
+
 .window-scroll{
-    background: var(--color-primary);
+    background: var(--color-bg2);
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
-
+.nav_logo h1>span{
+    color: var(--color-danger);
+}
 .nav_container{
     height: 100%;
     display: flex;
@@ -150,7 +153,7 @@ nav button{
     transition: var(--transition);
 }
 .nav_menu a:hover{
-    color: var(--color-bg2);
+    color: var(--color-bg);
 }
 .nav_menu .btn-primary:hover{
     color: var(--color-white);
@@ -210,15 +213,282 @@ header{
 .skills_container img{
     height: 5rem;
     width: 5rem;
-    margin-left: 29%;
+    margin: auto;
+    /* margin-left: 29%; */
 }
 .skills_container article:hover{
     box-shadow: 0 3rem 3rem rgba(0,0,0,0.5);
-   padding: 10%;
+    padding: 11%;
    cursor: pointer;
 }
 
 
+/* =======================PROJECTS============= */
+
+#Project{
+    margin-top: 9rem;
+    background: var(--color-bg1);
+    height: 29rem;
+}
+#Project h1{
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+#Project .project-top{
+   display: flex;
+   justify-content: space-around;
+    /* overflow: hidden; */
+ }
+#Project .project-top div{
+     width: 35%;
+ }
+ #Project img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-top: 5px solid var(--color-bg);
+    border-left: 5px solid var(--color-bg);
+    transition: var(--transition);
+ }
+ #Project img:hover{
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.5);;
+    width: 105%;
+    height: 105%;
+ }
+#Project .project-bottom{
+    margin-top: 4rem;
+   display: flex;
+   justify-content: center;
+    /* overflow: hidden; */
+ }
+#Project .project-bottom div{
+    width: 35%;
+ }
+
+
+/* ==========================CONTECT===================== */
+
+#Contect{
+    margin-top: 10rem;
+    background: var(--color-bg1);
+    height: 34rem;
+    margin-bottom: 0px;
+}
+.row{
+    display: flex;
+}
+.contect-left{
+    flex-basis:35%;
+}
+.contect-right{
+    flex-basis:60%;
+}
+.contect-left p{
+    margin-top: 30px;
+}
+.contect-left p i{
+    color: var(--color-danger);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: var(--transition);
+}
+.social-icons a:hover{
+    color: var(--color-warning);
+     transform: translateY(-5px);
+}
+
+.contect-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-bg);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* ==========================copyright================ */
+.copyright{
+    text-align: center;
+     font-weight: 300;
+     margin: 5px;
+     color: var(--color-bg2);
+}
 
 
 
+/* ------------------------css for small screen ----------------
+*/
+
+@media only screen and (max-width: 600px){
+    
+    .container{
+        width: var(--container-width-sm);
+        max-width: 600px;
+        margin:0 auto;
+    }
+    
+
+    .btn{
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
+
+
+    .window-scroll{
+        background: var(--color-bg2);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    }
+    .nav_container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        text-align: center;
+    }
+    nav li{
+        display: none;
+    }
+    nav button{
+        display: block;
+        cursor: pointer;
+        color: var(--color-white);
+        font-size: 1.7rem;
+        background-color: var(--color-bg);
+    }
+    .nav_menu{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+
+    header{
+        overflow: hidden;
+        height: 120vh;
+        margin-bottom: 1rem;
+    }
+    
+    .header_container{
+        display:grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 0rem;
+        /* height: 100%; */
+    }
+    .header_left h1{
+        font-size: 27px;
+    }
+    .header_left p{
+        font-size: 13px;
+        margin: 1rem 0 2.4rem;
+    }
+
+
+
+    .skills{
+        height: 45rem;
+        margin-top: 0px;
+        /* height: 29rem; */
+    }
+    .skills_container{
+       grid-template-columns: repeat(2, 1fr);
+       gap: 0.9rem 0.5rem;
+       /* overflow: hidden; */
+    }
+    .skills_container h4{
+        font-size: 8px;
+        /* margin: 0.5rem; */
+    }
+    
+    .skills_container article{
+        padding: 2rem;
+        border-radius: 1rem;
+        height: 7rem;
+    }
+    .skills_container img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .skills_container article:hover{
+        padding: 15%;
+    }
+
+
+
+    #Project{
+        margin-top: 0rem;
+        height: 48rem;
+    }
+
+    #Project .project-top{
+       display: grid;
+     }
+    #Project .project-top div{
+         width: 90%;
+         margin-bottom: 1rem;
+         margin-left: 0.9rem;
+     }
+     #Project img{
+        border-radius: 0.3rem;
+        border-top: 3px solid var(--color-bg);
+        border-left: 3px solid var(--color-bg);
+     }
+     #Project img:hover{
+       height: 102%;
+       width: 102%;
+     }
+    #Project .project-bottom{
+        margin-top: 0rem;
+     }
+    #Project .project-bottom div{
+        width: 85%;
+     }
+
+
+
+     #Contect{
+        margin-top: 0rem;
+        background: var(--color-bg1);
+        height: 44rem;
+        margin-bottom: 0px;
+    }
+    .row{
+        display: grid;
+    }
+    .contect-left p{
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .contect-left p i{
+        color: var(--color-danger);
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .social-icons{
+        margin-top: 10px;
+    }
+    .social-icons a{
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+}

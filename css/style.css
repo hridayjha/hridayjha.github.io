@@ -36,29 +36,30 @@ body{
     /* color: var(--color-dark); */
     line-height: 1.7;
     color: var(--color-white);
-    background-color: var(--color-bg);
+    background: var(--color-bg);
+    background-color: #1F2641;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232E3267' stroke-width='1.3'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23424890'%3E%3Ccircle cx='769' cy='229' r='8'/%3E%3Ccircle cx='539' cy='269' r='8'/%3E%3Ccircle cx='603' cy='493' r='8'/%3E%3Ccircle cx='731' cy='737' r='8'/%3E%3Ccircle cx='520' cy='660' r='8'/%3E%3Ccircle cx='309' cy='538' r='8'/%3E%3Ccircle cx='295' cy='764' r='8'/%3E%3Ccircle cx='40' cy='599' r='8'/%3E%3Ccircle cx='102' cy='382' r='8'/%3E%3Ccircle cx='127' cy='80' r='8'/%3E%3Ccircle cx='370' cy='105' r='8'/%3E%3Ccircle cx='578' cy='42' r='8'/%3E%3Ccircle cx='237' cy='261' r='8'/%3E%3Ccircle cx='390' cy='382' r='8'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .container{
     width: var(--container-width-lg);
-    max-width: 1800px;
     margin:0 auto;
 }
 section{
     padding: 6rem 0;
-    margin:5rem 0;
+    /* margin:5rem 0; */
 }
-section h2{
+section h1{
     text-align: center;
     margin-bottom: 4rem;
 }
 h1,h2,h3,h4,h5{
-    line-height: 2rem;
+    line-height: 1.2rem;
     /* color: var(--color-black); */
 }
 h1{
-    font-size: 1.9rem;
-    /* line-height: 1.1; */
+    font-size: 2.4rem;
+    line-height: 1.1;
 }
 h2{
     font-size: 2rem;
@@ -67,11 +68,9 @@ h3{
     font-size: 1.6rem;
 }
 h4{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
-h5{
-    font-size: 1rem;
-}
+
 a{
     color: var(--color-white);
 }
@@ -82,10 +81,10 @@ img{
     object-fit: cover;
 }
 .btn{
-    background: var(--color-black);
+    background: var(--color-white);
     color:var(--color-black);
     display:inline-block;
-    font-width: 500;
+    font-weight: 500;
     padding: 1rem 2rem;
     border: 1px solid transparent;
     cursor: pointer;
@@ -100,7 +99,6 @@ img{
     background-color: var(--color-danger);
     color: var(--color-white);
 }
-
 /* .btn-primary:hover{
     border-color:var(--color-primary);
     background: var(--color-light);
@@ -127,12 +125,12 @@ nav{
 /* ---------change nav styles using javaScript----------  */
 
 .window-scroll{
-    background: var(--color-bg2);
+    background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 .nav_logo h1>span{
     color: var(--color-danger);
-}
+} 
 .nav_container{
     height: 100%;
     display: flex;
@@ -153,11 +151,11 @@ nav button{
     transition: var(--transition);
 }
 .nav_menu a:hover{
-    color: var(--color-bg);
+    color: var(--color-bg2);
 }
-.nav_menu .btn-primary:hover{
+/* .nav_menu .btn-primary:hover{
     color: var(--color-white);
-}
+} */
 
 
 /* ============================HEADER====================== */
@@ -167,7 +165,7 @@ header{
     top: 5rem;
     overflow: hidden;
     height: 70vh;
-    margin-bottom: 9rem;
+    margin-bottom: 7rem;
 }
 
 .header_container{
@@ -180,18 +178,32 @@ header{
 
 .header_left p{
     margin: 1rem 0 2.4rem;
+    position: relative;
+}
+.header_right{
+   border: 10px solid rgba(0, 0, 0, 0.284);
+   border-top: 0;
+   border-radius: 10rem;
+   width: fit-content;
+   margin-left: 5rem;
+}
+.header_right img{
+    height: 300px;
+    width: 285px;
+    border: 7px solid rgba(255, 255, 255, 0.202);
+    border-right: 7px solid rgba(255, 255, 255, 0.922);
+    border-bottom: 0;
+    border-radius: 10rem;
+    margin: auto;
 }
 
 /* ===============================Skills==================== */
 .skills{
+    
     background: var(--color-bg1);
-    height: 29rem;
+    height: 32rem;
 }
-.skills h1{
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 2rem;
-}
+
 .skills_container{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -226,47 +238,35 @@ header{
 /* =======================PROJECTS============= */
 
 #Project{
-    margin-top: 9rem;
-    background: var(--color-bg1);
-    height: 29rem;
+    margin-top: 10rem;
 }
-#Project h1{
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 2rem;
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
-#Project .project-top{
-   display: flex;
-   justify-content: space-around;
-    /* overflow: hidden; */
- }
-#Project .project-top div{
-     width: 35%;
- }
- #Project img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    border-top: 5px solid var(--color-bg);
-    border-left: 5px solid var(--color-bg);
-    transition: var(--transition);
- }
- #Project img:hover{
-    box-shadow: 0 3rem 3rem rgba(0,0,0,0.5);;
-    width: 105%;
-    height: 105%;
- }
-#Project .project-bottom{
-    margin-top: 4rem;
-   display: flex;
-   justify-content: center;
-    /* overflow: hidden; */
- }
-#Project .project-bottom div{
-    width: 35%;
- }
 
+.project{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.project:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.project_info{
+    padding: 2rem;
+}
+
+.project_info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.8rem;
+}
+.project_info .btn{
+     padding: 0.5rem 1rem;
+}
 
 /* ==========================CONTECT===================== */
 
@@ -277,7 +277,9 @@ header{
     margin-bottom: 0px;
 }
 .row{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 .contect-left{
     flex-basis:35%;
@@ -336,7 +338,7 @@ form input, form textarea{
 /* ------------------------css for small screen ----------------
 */
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     
     .container{
         width: var(--container-width-sm);
@@ -372,7 +374,8 @@ form input, form textarea{
         cursor: pointer;
         color: var(--color-white);
         font-size: 1.7rem;
-        background-color: var(--color-bg);
+        background: transparent;
+        cursor: pointer;
     }
     .nav_menu{
         display: flex;
@@ -385,41 +388,41 @@ form input, form textarea{
         overflow: hidden;
         height: 120vh;
         margin-bottom: 1rem;
-    }
+    } */
     
-    .header_container{
+    /* .header_container{
         display:grid;
         grid-template-columns: 1fr;
         align-items: center;
         gap: 0rem;
-        /* height: 100%; */
-    }
-    .header_left h1{
+        /* height: 100%;  
+    } */
+    /* .header_left h1{
         font-size: 27px;
     }
     .header_left p{
         font-size: 13px;
         margin: 1rem 0 2.4rem;
-    }
+    } */
 
 
 
-    .skills{
+    /* .skills{
         height: 45rem;
         margin-top: 0px;
-        /* height: 29rem; */
+        /* height: 29rem; 
     }
     .skills_container{
        grid-template-columns: repeat(2, 1fr);
        gap: 0.9rem 0.5rem;
-       /* overflow: hidden; */
+       /* overflow: hidden; 
     }
     .skills_container h4{
         font-size: 8px;
-        /* margin: 0.5rem; */
-    }
+        /* margin: 0.5rem; 
+    } */
     
-    .skills_container article{
+    /* .skills_container article{
         padding: 2rem;
         border-radius: 1rem;
         height: 7rem;
@@ -461,10 +464,10 @@ form input, form textarea{
      }
     #Project .project-bottom div{
         width: 85%;
-     }
+     } */
 
 
-
+/* 
      #Contect{
         margin-top: 0rem;
         background: var(--color-bg1);
@@ -482,6 +485,217 @@ form input, form textarea{
         color: var(--color-danger);
         margin-right: 15px;
         font-size: 20px;
+    }
+    .social-icons{
+        margin-top: 10px;
+    }
+    .social-icons a{
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+} */
+
+
+
+/* ===============================Screen Size md=================== */
+
+
+@media screen and ( max-width: 1024px){
+     .container{
+        width: var(--container-width-md);
+     }
+     h1{
+        font-size: 2.2rem;
+     }
+     h2{
+        font-size: 1.7rem;
+     }
+     h3{
+        font-size: 1.4rem;
+     }
+     h4{
+        font-size: 1.2;
+     }
+
+     nav button{
+        display: inline-block;
+        background-color: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+     }
+     nav button#close-menu-btn{
+        display: none;
+     }
+     .nav_menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+     }
+     .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+     }
+     .nav_menu li:nth-child(2){
+        animation-delay: 200ms;
+     }
+     .nav_menu li:nth-child(3){
+        animation-delay:400ms;
+     }
+     .nav_menu li:nth-child(4){
+        animation-delay: 600ms;
+     }
+@keyframes animateNavItems {
+    0%{
+       transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+
+    100%{
+      transform: rotatez(0) rotate(0) scale(1);
+      opacity: 1;
+    }
+}
+
+     .nav_menu li a{
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+     }
+     .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+     }
+
+
+     /* -------header--- */
+
+     header{
+        height: 80vh;
+        margin-bottom: 4rem;
+     }
+     .header_container{
+        gap: 0;
+        padding-bottom: 3rem;
+     }
+     .header_left p{
+        text-align: justify;
+     }
+     .header_right{
+        margin-left: 5rem;
+     }
+
+
+     /* ----------skill----------- */
+     .skills{
+        height: 120vh;
+     }
+     .skills_container{
+        grid-template-columns: repeat(3,1fr);
+     }
+     .skills h4{
+        margin-top: .4rem;
+        font-size: .9rem;
+     }
+
+     /* -------------------project--------- */
+
+     .project_container{
+        display: contents;
+     }
+     .project{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 2rem;
+     }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    /* --------nav---------- */
+
+    .nav_menu{
+        right:3%;
+    }
+
+
+    /* ----------header--------- */
+    header{
+        height: 110vh;
+    }
+    .header_container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .header_left p{
+        margin-bottom: 1.3rem;
+    }
+    .header_right{
+        margin: 2rem;
+     }
+
+
+     /* ----------skill----------- */
+     .skills{
+        height: 120vh;
+     }
+     .skills_container{
+        grid-template-columns: repeat(2,1fr);
+     }
+     .skills_container article{
+        padding: 2rem;
+        border-radius: 1rem;
+        height: 7rem;
+    }
+    .skills_container img{
+        height: 3rem;
+        width: 3rem;
+    }
+     .skills h4{
+        margin-top: .4rem;
+        font-size: .7rem;
+     }
+
+
+     /* -----------project----------- */
+
+    #Project{
+        margin: 3rem 0 ;
+    }
+     .project{
+        width: 90%;
+     }
+
+
+     /* -----------------contect------------- */
+
+     #Contect{
+        margin-top: 0rem;
+        height: 45rem;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contect-left p{
+        margin-top: 10px;
+        font-size: 13px;
     }
     .social-icons{
         margin-top: 10px;

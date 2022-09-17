@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./mediaSource/hacker.svg" type="image/x-icon">
     <title>Hriday-Narayan-Jha-Portfolio</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,900&display=swap" rel="stylesheet">
+
+    <link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
 
 </head>
 <body>
@@ -21,7 +30,8 @@
          <a href="index.html" class="nav_logo"><h1><span>H</span> Jha</h1></a>
          <ul class="nav_menu">
             <li><a href="index.html">About</a></li>
-            <li><a href="#Skill">Skill</a></li>
+            <li><a href="#Skill">Tech Stack</a></li>
+            <li><a href="#Skills">Skills</a></li>
             <li><a href="#Project">Projects</a></li>
             <li><a href="#Contect">Contect</a></li>
             
@@ -65,7 +75,7 @@
   <!-- =================================SKILLS================== -->
 
 <section id="Skill" class="skills">
-   <h1>SKILLS</h1>
+   <h1>TECH STACK</h1>
    <div class="container skills_container">
       <article class="skill">
          <span class="skill_icon"><img src="./mediaSource/html.svg" alt=""></span>
@@ -102,6 +112,37 @@
    </div>
 </section>
 
+<!-- =============================endOfTechStack================= -->
+
+<!-- =============================startOfskills================= -->
+
+<section id="Skills">
+   <h1>SKILLS</h1>
+   <div>
+      <div>
+         <img src="./mediaSource/data-synchronization.svg" alt="">
+         <h4>BACKEND</h4>
+         <p></p>
+      </div>
+      <div>
+         <img src="./mediaSource/development.svg" alt="">
+         <h4>FRONTEND</h4>
+         <p></p>
+      </div>
+      <div>
+         <img src="./mediaSource/algorithm.svg" alt="">
+         <h4>DATA STRACTURE & ALGORITHMS</h4>
+         <p></p>
+      </div>
+     
+   </div>
+
+</section>
+
+  <!-- ===============================endOfSkills============== -->
+
+  <!-- ===============================startOf project============== -->
+
 <section id="Project">
     <h1>PROJECTS</h1>
      <div class="container project_container">
@@ -111,7 +152,7 @@
          </div>
          <div class="project_info">
             <h4>Headphone Zone(Clone)</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, ipsam illum. Est explicabo quasi repudiandae? Magnam.</p>
+            <p>This is a headphone based Product app here user can choose thair best deal. I clone this app with my Masai pears with healp of 'HTML','CSS'and'Javascript'</p>
             <a href="https://github.com/Sujeetsharma1997/headphonezone.in" class="btn btn-primary">GitHub</a>
             <a href="#gitlink" class="btn btn-primary">Live</a>
          </div>
@@ -122,7 +163,7 @@
          </div>
          <div class="project_info">
             <h4>zee5(Clone)</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, ipsam illum. Est explicabo quasi repudiandae? Magnam.</p>
+            <p>This is a OTT app hear user can subscribe the plan and watch thair fevrate content .I clone this website with my five other mets by useing 'HTML','CSS' and 'Javascript'. </p>
             <a href="https://github.com/hridayjha/Zee5-constructWeekProject" class="btn btn-primary">GitHub</a>
             <a href="#gitlink" class="btn btn-primary">Live</a>
          </div>
@@ -133,7 +174,7 @@
          </div>
          <div class="project_info">
             <h4>Travelocity(Clone)</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, ipsam illum. Est explicabo quasi repudiandae? Magnam.</p>
+            <p>It is a travel web app hear user can book thair hotals , flights and  rent a  car.I clone this web app with my four other pears with using 'HTML','CSS' and 'Javascript'.</p>
             <a href="https://github.com/bansalharshit/unit2-project-1--travelocity" class="btn btn-primary">GitHub</a>
             <a href="#gitlink" class="btn btn-primary">Live</a>
          </div>
@@ -144,6 +185,22 @@
 
 
 <!-- ============================Project End============== -->
+<!-- ==============================git calendar start========== -->
+<section id="git">
+   <h1>STATISTICS</h1>
+   <div class="stats">
+      <div class="loder"><span><h4>1800h+ Coding
+      </h4></span></div>
+      <div class="loder"><span><h4>10+ Projects</h4></span></div>
+      <div class="loder"><span><h4>200+ Assignments</h4></span></div>
+   </div>
+   <div class="calendar">
+
+   </div>
+</section>
+
+<!-- ==============================git calendar end========== -->
+
 
 <!-- ==============================ContectStart============ -->
 <section id="Contect">
@@ -176,3 +233,8 @@
 </body>
 </html>
 <script src="./main.js"></script>
+<script>
+   GitHubCalendar(".calendar", "hridayjha");
+   // or enable responsive functionality
+   GitHubCalendar(".calendar", "hridayjha", { responsive: true });
+</script>

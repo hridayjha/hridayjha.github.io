@@ -615,7 +615,7 @@ form input, form textarea{
         margin-bottom: 1.3rem;
     }
     .header_right{
-        margin: 0rem 0 0 5rem;
+        margin: auto;
      }
      .header_right img{
         height: 200px;

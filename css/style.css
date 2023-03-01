@@ -307,9 +307,8 @@ header{
      padding: 0.5rem 1rem;
 }
 
-mark{
-background: var(--color-danger)
-    
+.project_info b{
+background-color: #f7c94b
 }
 
 

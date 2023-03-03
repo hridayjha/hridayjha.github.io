@@ -308,7 +308,8 @@ header{
 }
 
 .project_info b{
-background-color:#7562E0
+background-color:#7562E0;
+  font-size: 1rem;
 }
 
 
